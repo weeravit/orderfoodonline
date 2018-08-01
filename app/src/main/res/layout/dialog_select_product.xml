@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:padding="@dimen/padding_normal"
+        tools:background="#7eff00ff"
+        tools:layout_gravity="bottom">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/text_food_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_medium_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="KFC Only 5 left" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button_decrease"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="@dimen/text_medium_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/text_amount"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/text_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_medium_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/button_increase"
+            app:layout_constraintStart_toEndOf="@id/button_decrease"
+            app:layout_constraintTop_toTopOf="@id/button_decrease"
+            tools:text="1" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button_increase"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="@dimen/text_medium_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/text_amount" />
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

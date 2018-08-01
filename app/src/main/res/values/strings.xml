@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">OrderFoodOnline</string>
+    <string name="food_stock">%1$s Only %2$s left</string>
 </resources>

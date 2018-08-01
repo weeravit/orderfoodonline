@@ -29,6 +29,6 @@ class FoodActivity : AppCompatActivity() {
     }
 
     private val onFoodClickListener = { item: FoodViewModel.Food ->
-
+        SelectFoodDialog.show(supportFragmentManager)
     }
 }
